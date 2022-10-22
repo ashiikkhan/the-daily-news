@@ -18,5 +18,15 @@
  * 2. create and export router by createBrowserRouter()
  * 3. in App.js call <RouterProvider/> and set router prop and import router.
  * 4. create a Main.jsx Component in layout folder and give layout to this Main.jsx by react bootstrap
- * 5.
+ * 5. set children routes in Main route.
+ *
+ * -----------------------
+ * data load & expresss js
+ * ------------------------
+ * 1. create a folder for server
+ * 2. cd to that folder and install npm [nmp init -y]
+ * 3. npm install express [npm install express]
+ * 4. create index.js file and create express app here and then start the app by command [nodemon index.js]
+ * 5. data create korte hobe
+ * 6. then data gulo respond hishebe pathaite hobe.
  */
