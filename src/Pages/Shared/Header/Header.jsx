@@ -1,11 +1,14 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand='lg' bg='light' variant='light'>
       <Container fluid>
-        <Navbar.Brand href='#home'>The Daily News</Navbar.Brand>
+        <Navbar.Brand>
+          <Link to='/'>The Daily News</Link>{' '}
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav className='ms-auto'>
