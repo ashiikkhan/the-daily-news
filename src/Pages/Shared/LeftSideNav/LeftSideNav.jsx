@@ -12,8 +12,8 @@ const LeftSideNav = () => {
   console.log(categories);
 
   return (
-    <div className='bg-warning'>
-      <h2>All Categories</h2>
+    <div>
+      <h4>All Categories</h4>
       <div>
         {categories.map((category) => (
           <p key={category.id} category={category}>
