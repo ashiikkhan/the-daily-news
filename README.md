@@ -1,11 +1,15 @@
 # The Daily News
 
-## project details
+## Project Details:
 
-This is a [ReactJS project](https://reactjs.org/).
+[ReactJS project](https://reactjs.org/)
 
-[React Router](https://reactrouter.com/en/main).
+[React Router](https://reactrouter.com/en/main)
 
-[Firebase](https://console.firebase.google.com/).
+[Firebase](https://console.firebase.google.com/)
+
+[Express JS](https://expressjs.com/)
 
 [React Bootstrap](https://react-bootstrap.github.io/)
+
+[React Icons](https://react-icons.github.io/)
