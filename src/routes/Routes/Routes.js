@@ -7,6 +7,7 @@ import PrivateRoute from '../PrivateRoute/PrivateRoute';
 import Login from '../../Pages/Login/Login';
 import Register from '../../Pages/Register/Register';
 import Terms from '../../Pages/Others/Terms';
+import Profile from '../../Pages/Others/Profile/Profile';
 
 //create browser router and export it
 export const router = createBrowserRouter([
@@ -50,6 +51,14 @@ export const router = createBrowserRouter([
       {
         path: '/terms',
         element: <Terms></Terms>,
+      },
+      {
+        path: '/profile',
+        element: (
+          <PrivateRoute>
+            <Profile></Profile>
+          </PrivateRoute>
+        ),
       },
     ],
   },

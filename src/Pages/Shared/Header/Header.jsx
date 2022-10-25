@@ -91,7 +91,7 @@ const Header = () => {
                 </Nav>
               )}
             </Nav.Link>
-            <Nav.Link eventKey={2} href='#'>
+            <Link to='/profile'>
               {user?.photoURL ? (
                 <Image
                   style={{ height: '2rem' }}
@@ -100,7 +100,7 @@ const Header = () => {
               ) : (
                 <FaUser className='mt-2'></FaUser>
               )}
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
