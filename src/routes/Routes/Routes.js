@@ -3,6 +3,10 @@ import Main from '../../layout/Main';
 import Home from '../../Pages/Home/Home/Home';
 import Catergory from '../../Pages/Category/Catergory';
 import News from '../../Pages/News/News';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
+import Login from '../../Pages/Login/Login';
+import Register from '../../Pages/Register/Register';
+import Terms from '../../Pages/Others/Terms';
 
 //create browser router and export it
 export const router = createBrowserRouter([
@@ -27,9 +31,25 @@ export const router = createBrowserRouter([
       },
       {
         path: '/news/:id',
-        element: <News></News>,
+        element: (
+          <PrivateRoute>
+            <News></News>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/news/${params.id}`),
+      },
+      {
+        path: '/login',
+        element: <Login></Login>,
+      },
+      {
+        path: '/register',
+        element: <Register></Register>,
+      },
+      {
+        path: '/terms',
+        element: <Terms></Terms>,
       },
     ],
   },
