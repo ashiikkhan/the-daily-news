@@ -6,7 +6,7 @@ const Profile = () => {
   const { user } = useContext(AuthContext);
   return (
     <div>
-      <div className='w-50'>
+      <div className='w-75 m-auto'>
         <Card className='bg-dark text-black'>
           <Card.Img src={user.photoURL} alt='Card image' />
           <Card.ImgOverlay>
